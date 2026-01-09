@@ -81,7 +81,9 @@ class Economy(commands.Cog):
         if isinstance(error, app_commands.CommandOnCooldown):
             # Calculate remaining time
             minutes, seconds = divmod(int(error.retry_after), 60)
-            msg = f"⏳ You're tired! Try again in **{minutes}m {seconds}s**."
+            hours, minutes = divmod(minutes, 60)
+            
+            msg = f"⏳ You're tired! Try again in **{hours}h {minutes}m {seconds}s**."
             await interaction.response.send_message(msg, ephemeral=True)
         else:
             logging.error(f"Error in work command: {error}")

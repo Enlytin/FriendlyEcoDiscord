@@ -2,7 +2,7 @@
     "currency_symbol": "SPH",
     "currency_name": "Sapphires",
     "starting_balance": 100,
-    "work_cooldown_seconds": 3600,
+    "work_cooldown_seconds": 21600,
     "work_min_earnings": 10,
     "work_max_earnings": 50,
     "database_name": "economy.db"

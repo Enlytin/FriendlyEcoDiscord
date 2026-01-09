@@ -2,9 +2,9 @@
 .pytest_cache
 lib
 lib64
-pyvenv.cfg
 bin
 __pycache__
 */*/__pycache__
 */__pycache__
 tests/.pytest_cache
+economy.db
